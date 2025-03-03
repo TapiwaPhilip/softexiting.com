@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import { Menu } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -27,9 +28,9 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center">
-            <a href="/" className="text-2xl font-bold text-primary transition-colors hover:text-primary/90">
+            <Link to="/" className="text-2xl font-bold text-primary transition-colors hover:text-primary/90">
               StartupSalvage
-            </a>
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
@@ -37,9 +38,9 @@ const Header = () => {
             <a href="#how-it-works" className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors">
               How It Works
             </a>
-            <a href="#benefits" className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors">
-              Benefits
-            </a>
+            <Link to="/about" className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors">
+              Why Us
+            </Link>
             <a href="#testimonials" className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors">
               Success Stories
             </a>
@@ -79,13 +80,13 @@ const Header = () => {
             >
               How It Works
             </a>
-            <a 
-              href="#benefits" 
+            <Link
+              to="/about" 
               className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Benefits
-            </a>
+              Why Us
+            </Link>
             <a 
               href="#testimonials" 
               className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors"
