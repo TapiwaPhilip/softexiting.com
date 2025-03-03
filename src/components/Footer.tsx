@@ -3,6 +3,7 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -58,9 +59,9 @@ const Footer = () => {
             <h3 className="text-sm font-semibold text-foreground">Company</h3>
             <ul className="space-y-3">
               <li>
-                <a href="#about" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <Link to="/about" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
                 <a href="#careers" className="text-sm text-muted-foreground hover:text-primary transition-colors">
@@ -133,14 +134,14 @@ const Footer = () => {
             &copy; {new Date().getFullYear()} StartupSalvage. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 sm:mt-0">
+            <Link to="/about" className="text-xs text-muted-foreground hover:text-primary transition-colors">
+              About
+            </Link>
             <a href="#privacy" className="text-xs text-muted-foreground hover:text-primary transition-colors">
               Privacy
             </a>
             <a href="#terms" className="text-xs text-muted-foreground hover:text-primary transition-colors">
               Terms
-            </a>
-            <a href="#cookies" className="text-xs text-muted-foreground hover:text-primary transition-colors">
-              Cookies
             </a>
           </div>
         </div>
