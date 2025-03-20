@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -67,6 +66,7 @@ const Index = () => {
         <meta name="description" content="Sell your failed startup for as little as €1 and turn failure into an exit. StartupSalvage helps founders exit gracefully and move forward with confidence." />
         <meta name="keywords" content="startup exit, failed startup, sell startup, startup acquisition, entrepreneur exit" />
         <link rel="canonical" href="https://startupsalvage.com/" />
+        <meta name="google-site-verification" content="AN60Zb6eNzt0DYrFF4v4GllD3jiOS-BUp_luUJVJG0o" />
       </Helmet>
       <Header />
       <main className="flex-grow">
