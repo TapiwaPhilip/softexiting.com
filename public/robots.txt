@@ -1,0 +1,7 @@
+
+# StartupSalvage robots.txt
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://startupsalvage.com/sitemap.xml

@@ -4,10 +4,17 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Check } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
 
 const About = () => {
   return (
     <div className="min-h-screen flex flex-col w-full">
+      <Helmet>
+        <title>About StartupSalvage - Turn Failure Into Opportunity</title>
+        <meta name="description" content="Learn how StartupSalvage helps founders exit their failed startups gracefully and turn failure into opportunity. Sell your startup for as little as €1." />
+        <meta name="keywords" content="about startup salvage, failed startup exit, startup acquisition, entrepreneur second chance" />
+        <link rel="canonical" href="https://startupsalvage.com/about" />
+      </Helmet>
       <Header />
       <main className="flex-grow">
         <section className="py-20 relative overflow-hidden">

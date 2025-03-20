@@ -7,6 +7,7 @@ import HowItWorks from '@/components/HowItWorks';
 import Benefits from '@/components/Benefits';
 import Testimonials from '@/components/Testimonials';
 import ApplicationForm from '@/components/ApplicationForm';
+import { Helmet } from 'react-helmet-async';
 
 const Index = () => {
   // Smooth scroll to anchors
@@ -61,6 +62,12 @@ const Index = () => {
 
   return (
     <div className="min-h-screen flex flex-col w-full">
+      <Helmet>
+        <title>StartupSalvage - Turn Your Failed Startup Into an Exit</title>
+        <meta name="description" content="Sell your failed startup for as little as €1 and turn failure into an exit. StartupSalvage helps founders exit gracefully and move forward with confidence." />
+        <meta name="keywords" content="startup exit, failed startup, sell startup, startup acquisition, entrepreneur exit" />
+        <link rel="canonical" href="https://startupsalvage.com/" />
+      </Helmet>
       <Header />
       <main className="flex-grow">
         <Hero />
